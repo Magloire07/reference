@@ -1,0 +1,46 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+ .App{
+  margin: -8px -5px -30px -5px ;
+ }
+.logo{
+  background-color: white;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+}
+.App-header{
+  position: fixed;
+  height: 150px;
+  background-color:#ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.name_logo{
+  display: flex;
+  align-items: center;
+}
+
+.name_logo h1{
+  font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(56, 56, 56);
+  
+}
+h3{
+  margin: 0px;
+}
+.user_decon {
+  text-align: center; /* Horizontally center content */
+}
+.user , .message{
+  width: 30px ;
+  height: 30px;  
+}
+.user_mess{
+  display: flex;
+}
