@@ -44,3 +44,9 @@ h3{
 .user_mess{
   display: flex;
 }
+.exception_div {
+  background-color: red; /* Set the background to transparent */
+  position: relative; /* Ensure it appears above the overlay */
+  z-index: 2000; /* Make it appear above the overlay */
+
+}

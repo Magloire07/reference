@@ -8,6 +8,7 @@ import Mainframe from './Mainframe';
 import StoreEntrep from './StoreEntrep';
 import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import '../styles/overLay.css';
 function App() {
   const stat="se connecter"
   return (
@@ -26,14 +27,14 @@ function App() {
          <img src={message} className='message'/>
         </div>
       </header>
-      <Options/>
+      <Options className='exception_div' />
       <Routes>
         <Route path="/" element={<Mainframe />} />
         <Route path="accueil" element={<Mainframe />} />
         <Route path="store" element={<StoreEntrep />} />
 
       </Routes>
-  
+
     </div>
   );
 }

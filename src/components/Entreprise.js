@@ -6,7 +6,7 @@ function Entreprise({logo_entreprise,name_entreprise,description_activity,avis,c
     return(
         <div className="vue_entrep">
             <div className='vitrine-entrep'>
-            <img  className="log_entrep" src={logo_entreprise} alt="logo"/>
+                <img  className="log_Entrep" src={logo_entreprise} alt="logo"/>
             </div>
             <img  className="logo_imble" src={logo_imble} alt="logo_imble"/>
             <h3>  {name_entreprise}</h3>

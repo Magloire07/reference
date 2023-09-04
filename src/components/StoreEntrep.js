@@ -4,6 +4,7 @@ import logo_site from '../assets/logo_site.svg'
 import owner from '../assets/owner.svg'
 import Produit from './Produit'
 import React from 'react'
+import Map from './Map'
 function StoreEntrep(){
     const name_entreprise="hamada"
     const logo_entreprise=house
@@ -33,6 +34,10 @@ function StoreEntrep(){
                             <a href='#' title='visiter notre site web'>http//Example.domain</a> 
                         </div>
                         <p> <span>Avis:</span> {avis}</p> 
+                        <div title='Venir vers nous'>
+                            
+                        <Map/>
+                        </div>
                     </div>  
               
             </div>

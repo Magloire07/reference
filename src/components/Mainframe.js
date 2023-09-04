@@ -1,6 +1,6 @@
 import Entreprise from './Entreprise'
 import '../styles/mainframe.css'
-import house from '../assets/house.svg'
+import house from '../assets/logo_REF.svg'
 import logo_site from '../assets/logo_site.svg'
 import React from 'react'
 function Mainframe(){

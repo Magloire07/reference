@@ -1,6 +1,6 @@
 .vue_entrep{
    
-    background-color: rgb(254, 252, 252);
+    background-color: rgb(217, 217, 217);
     height: 120px;
     display: flex;
     align-items: center;
@@ -10,10 +10,10 @@
     border-radius: 8px;
     padding: 10px;
 }
-.log_entrep{
+.log_Entrep{
     
-    height: 80px;
-    width: 150px;
+    height: 100px;
+    width: 100%;
     border-radius: 8px;
     background-color: #ffffff;
 }
