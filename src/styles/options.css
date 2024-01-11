@@ -6,52 +6,49 @@
     width:11%;
     height: 600px;
     padding: 10px;
-    padding-top: 30px;
-    z-index: 1001;
-   
+    padding-top: 30px;   
 }
 ul{
     
-    margin-top: 30px;
+    margin-top: 85px;
     margin-left: -35px;
 }
 ul li{
-    background-color:  #cce3de;
+    border: none;
+    background-color: #9e6c48;
     align-items: center;
-    border-bottom:1px solid rgba(255, 255, 255, 0.85);
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: rgb(27, 27, 27);
+    font-size: 17px;
+    color: rgb(255, 255, 255);
     border-radius: 30px;
-    padding:4px 10px 4px 10px;
+    padding:5px 11px 5px 11px;
     margin: 7px;
     display: flex;
     list-style-type: none;
     cursor: pointer;
 }
 .link{
-    color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .selected-opt{
     
-    background-color:  #cce3de;
+    background-color: #8a4f24;
     align-items: center;
     border-bottom:1px solid rgba(255, 255, 255, 0.85);
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: rgb(27, 27, 27);
+    font-size: 17px;
     border-radius: 30px;
     padding:4px 10px 4px 10px;
-    border: 0.7px solid rgb(42, 42, 42);
+    border: 0.7px solid rgb(255, 255, 255);
     margin: 7px;
     display: flex;
     list-style-type: none;
 }
 ul li:hover{
-    background-color: #bbd0cc;
+    background-color: #9a643d;
 }
 .home{
     align-items: center; 
@@ -59,25 +56,32 @@ ul li:hover{
 }
 .home span{
     font-family: 'Roboto', sans-serif;
-    color: rgba(44, 44, 44, 0.929);
-    font-weight: 200;
-    font-size: 15px;
+    color: #9a643d;
+    font-weight: 300;
+    font-size: 25px;
     border-radius: 30px;
     cursor: pointer;
 }
 .home img {
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #bd7c4d;
     width: 65x;
     height: 65px;
+    margin-right: 10px;
 }
-.opt-list img{
+
+.opt-list{
+    z-index: 1001;
+    position: fixed;
+}
+
+.opt-list  div img{
     padding: 0px;
     margin: 5px;
     border-radius: 50%;
     background-color: #fff;
-    width: 35x;
-    height: 35px; 
+    width: 25x;
+    height: 25px; 
 }
 .opt-list .opt{
 display: flex;
@@ -103,3 +107,15 @@ display: flex;
     }
   }
   
+   ul .icon-button{
+    position: fixed;
+    left: 0;
+    top: 250px;
+  }
+  .icon-button img{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    
+    
+  }

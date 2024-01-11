@@ -7,8 +7,9 @@
 .logo{
   background-color: white;
   border-radius: 50%;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
+  margin-left: 10px;
 }
 .App-header{
   position: fixed;
@@ -24,7 +25,14 @@
   display: flex;
   align-items: center;
 }
-
+.name_logo h1 span{
+  font-size: 80px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(56, 56, 56);
+  background-color: #e5e5e5;
+  padding: 10px;
+  border-radius: 10px;
+}
 .name_logo h1{
   font-size: 40px;
   font-family: 'Quicksand', sans-serif;
@@ -36,6 +44,7 @@ h3{
 }
 .user_decon {
   text-align: center; /* Horizontally center content */
+
 }
 .user , .message{
   width: 30px ;
@@ -43,10 +52,9 @@ h3{
 }
 .user_mess{
   display: flex;
+  margin-right: 20px;
+  align-items: center;
 }
-.exception_div {
-  background-color: red; /* Set the background to transparent */
-  position: relative; /* Ensure it appears above the overlay */
-  z-index: 2000; /* Make it appear above the overlay */
-
+.message{
+  margin-right: 40px;
 }

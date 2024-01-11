@@ -15,19 +15,19 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='name_logo'>
-        <img src={logo} className="logo"/>
-        <h1>Références</h1>
+          <h1> <span>R</span>éférences</h1>
+          <img src={logo} className="logo"/>
         </div>
         <Search/>
         <div className='user_mess'>
+        <img src={message} className='message'/>
           <div className='user_decon'>
-        <img src={user} className='user'></img>
-        <h3>{stat}</h3>
-        </div>
-         <img src={message} className='message'/>
+            <img src={user} className='user'></img>
+            <h3>{stat}</h3>
+          </div>
         </div>
       </header>
-      <Options className='exception_div' />
+      <Options />
       <Routes>
         <Route path="/" element={<Mainframe />} />
         <Route path="accueil" element={<Mainframe />} />

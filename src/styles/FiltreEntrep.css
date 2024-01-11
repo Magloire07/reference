@@ -1,22 +1,8 @@
 
-.filtrer{
-    background-color: transparent; /* Set the background to transparent */
-    position: relative; /* Ensure it appears above the overlay */
-    z-index: 1002; /* Make it appear above the overlay */
-}
+
 .filtrer img{
     background-color: white;
     
-}
-  .banner_Filtrer{
-    top: 110px;
-    
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    height: 800px;
-    width: 800px;
-    border-radius: 8px;
-    z-index: 1002;
 }
 
 .F_hidden , .F_Ohidden{
@@ -26,16 +12,7 @@
 .F_visible  .F_Ovisible{
     display: block;
   }
-  
- 
-  
 
-.icon-button{
-    
-    background-color: transparent;
-    z-index: 1002;
-    
-}
  #F_overlay {
     position: fixed;
     top: 0;
@@ -44,4 +21,71 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
     z-index: 1001; /* Ensure the overlay appears above other content */
+}
+.banner_Filtrer {
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 900px;
+    z-index: 1002;
+    position: absolute; /* Position the element */
+    right: -100%; /* Initial position: off-screen to the right */
+    top: 10px; /* Adjust as needed */
+    bottom: 0;
+    color: #fff; /* Text color */
+    animation: slideInFromRight 1s ease forwards; /* Animation */
+}
+
+/* Animation keyframes */
+@keyframes slideInFromRight {
+    0% {
+        right: -100%; /* Start position: off-screen to the right */
+    }
+    100% {
+        right: 0; /* End position: fully visible on the screen */
+    }
+}
+.filtrer header img{
+    padding: 5px;
+    border-radius: 50%;
+}
+.filtrer header h2{
+    color: rgb(59, 59, 59);
+}
+.filtrer header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 1px rgba(124, 124, 124, 0.3); /* Add the shadow */
+
+}
+.filtrer footer{
+    
+    padding: 10px 50px 10px 30px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    box-shadow: 0px -3px 1px rgba(124, 124, 124, 0.3); /* Add the shadow */
+
+}
+.filtrer footer button{
+border-radius: 5px;
+background-color: transparent;
+}
+.filtrer footer h3{
+    color: #4d4d4d;
+    margin: 10px 10px 10px 10px ;
+
+}
+.filtrer footer .bt_effacer{
+    border: 1px  solid black;
+}
+.filtrer footer .bt_rechercher{
+    
+    border: none;
+    background-color: #99582a;
+}
+.filtrer footer .bt_rechercher h3{
+    color: white;
 }

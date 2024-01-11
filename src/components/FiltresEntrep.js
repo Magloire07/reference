@@ -1,10 +1,13 @@
 import React from 'react'
 import iconFiltrer from '../assets/filtrer.svg'
+import iconFermer from '../assets/icone_Fermer.svg'
+
 import '../styles/FiltreEntrep.css'
 
 
 export  default function Filtrer(){
 
+    /* Fonction de gestion de click  */
   function manageClickFiltrer(){
     const overlay = document.getElementById('F_overlay');
     const ban = document.getElementById('banner');
@@ -20,6 +23,14 @@ export  default function Filtrer(){
         ban.classList.add('F_hidden');
       }
 }
+function manageClickEffacer(){
+
+}
+function manageClickRechercher(){
+
+}
+
+const total=0;
  return(
     <React.Fragment>
     <div className='filtrer'  >
@@ -27,6 +38,23 @@ export  default function Filtrer(){
             <img src={iconFiltrer} alt="Microphone"/>
         </button>
         <div  id='banner' className='banner_Filtrer F_hidden'>
+            <header>
+              <h2>Tout les filtres</h2>
+              <button className="icon-button" onClick={()=>manageClickFiltrer()}>
+                    <img src={iconFermer} alt="Fermer"/>
+              </button>
+            </header>
+            <div>
+
+            </div>  
+            <footer>
+              <button className="bt_effacer" onClick={()=>manageClickEffacer()}>
+                 <h3>Tout Effacer</h3>
+               </button>
+              <button className="bt_rechercher" onClick={()=>manageClickRechercher()}>
+                 <h3> Rechercher( <span>{total}</span>)</h3>
+              </button>
+            </footer> 
 
         </div>
     </div>
